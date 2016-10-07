@@ -40,9 +40,10 @@ public class Game {
 		}
 		
 		int winnings = matches * bet;
+		//System.out.println("Wining in player "+ winnings + " matches " + matches);
 
 		if (matches > 0) {			
-			player.receiveWinnings(winnings);
+			player.receiveWinnings(winnings+5);
 		}
         return winnings;		
 	}
