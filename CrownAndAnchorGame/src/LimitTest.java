@@ -26,7 +26,46 @@ public class LimitTest {
 
 	@Test
 	public void test() {
-		fail("Not yet implemented");
+		String name = "Fred";
+    	int balance = 15;
+    	int limit = 0;
+        player = new Player(name, balance);
+        player.setLimit(limit);
+        int bet = 5;
+
+       
+        System.out.println(String.format("%s starts with balance %d, limit %d", 
+        		player.getName(), player.getBalance(), player.getLimit()));
+
+        int turn = 0;
+        while (player.balanceExceedsLimitBy(bet) && player.getBalance() < 200)
+        {
+            turn++;                    
+        	DiceValue pick = DiceValue.getRandom();
+           
+        	System.out.printf("Turn %d: %s bet %d on %s\n",
+        			turn, player.getName(), bet, pick); 
+        	
+        	int winnings = game.playRound(player, pick, bet);
+            cdv = game.getDiceValues();
+            
+            System.out.printf("Rolled %s, %s, %s\n",
+            		cdv.get(0), cdv.get(1), cdv.get(2));
+            
+            if (winnings > 0) {
+                System.out.printf("%s won %d, balance now %d\n\n",
+                		player.getName(), winnings, player.getBalance());
+        
+            }
+            else {
+                System.out.printf("%s lost, balance now %d\n\n",
+                		player.getName(), player.getBalance());
+       
+            }
+            
+        } //while
+
+		
 	}
 
 }
