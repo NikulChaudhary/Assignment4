@@ -27,7 +27,7 @@ public class LimitTest {
 	@Test
 	public void test() {
 		String name = "Fred";
-    	int balance = 15;
+    	int balance = 10;
     	int limit = 0;
         player = new Player(name, balance);
         player.setLimit(limit);
