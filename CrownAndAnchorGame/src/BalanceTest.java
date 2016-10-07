@@ -26,7 +26,7 @@ public class BalanceTest {
 	}
 
 	@Test
-	public void test() {
+	public void testBalance() {
 	
 		String name = "Fred";
     	int balance = 100;
