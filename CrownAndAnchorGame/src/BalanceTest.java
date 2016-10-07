@@ -2,6 +2,7 @@ import static org.junit.Assert.*;
 
 import java.util.List;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -51,10 +52,13 @@ public class BalanceTest {
         if (winnings > 0) {
             System.out.printf("%s won %d, balance now %d\n\n",
             		player.getName(), winnings, player.getBalance());
+            
+            assertEquals(player.getBalance(), player.getBalance());
         }
         else {
             System.out.printf("%s lost, balance now %d\n\n",
             		player.getName(), player.getBalance());
+            assertEquals(player.getBalance(), player.getBalance());
         }
 
 		
