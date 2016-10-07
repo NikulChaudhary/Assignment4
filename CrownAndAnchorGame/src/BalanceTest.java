@@ -29,7 +29,7 @@ public class BalanceTest {
 	public void testBalance() {
 	
 		String name = "Fred";
-    	int balance = 100;
+    	int balance = 10;
     	int limit = 0;
         player = new Player(name, balance);
         player.setLimit(limit);
