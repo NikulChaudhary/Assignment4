@@ -17,7 +17,7 @@ public class GameTest {
     }
     
     @Test
-    public void testPlayRound() {   
+    public void testPlayRound() {  // test the defect of original code
         Player player = new Player("Fred",100);
         DiceValue pick = DiceValue.CROWN;
         Dice d1 = new Dice();
