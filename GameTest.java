@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 import java.util.List;
 import org.junit.Before;
 import org.junit.Test;
@@ -21,13 +15,9 @@ public class GameTest {
     @Before
     public void setUp() {
     }
-
-    /**
-     * Test of playRound method, of class Game.
-     */
+    
     @Test
-    public void testPlayRound() {
-        
+    public void testPlayRound() {   
         Player player = new Player("Fred",100);
         DiceValue pick = DiceValue.CROWN;
         Dice d1 = new Dice();
@@ -39,8 +29,6 @@ public class GameTest {
         int expResult = instance.playRound(player, pick, bet);
         int result = instance.playRound(player, pick, bet1);
         System.out.println(result);
-        assertEquals(expResult, result);
-        
-    }
-    
+        assertEquals(expResult, result);   
+    }   
 }
