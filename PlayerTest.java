@@ -16,7 +16,7 @@ public class PlayerTest {
     }
 
     @Test
-    public void testCheckBet() {
+    public void testCheckBet() { // test the bet amount
         Player player = new Player("Fred",100);
         int betAmount = 10;
         boolean expResult = true;
