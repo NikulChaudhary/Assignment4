@@ -1,0 +1,14 @@
+Test Name	BUG 4
+Use Case Tested:	BUG 1, BUG 2, BUG 3
+Test Description:	Odds in the game do not appear to be correct.
+Pre-conditions	Initially console application should run for checking the bug
+Post-conditions	Check the new result with the previous result of that bug
+Notes:	This test is for debugging process or removing errors
+
+Result (Pass/Fail/Warning/Incomplete)	
+	TEST STEP	EXPECTED TEST RESULTS	P	F
+1.		Solve BUG 1,2,3		y	
+2.		Run the main class	Showing odd approx 0.49	y	
+					
+ 
+
